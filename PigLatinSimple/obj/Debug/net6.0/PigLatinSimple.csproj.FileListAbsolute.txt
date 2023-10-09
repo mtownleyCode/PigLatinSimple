@@ -1,0 +1,14 @@
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.AssemblyInfoInputs.cache
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.AssemblyInfo.cs
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.csproj.CoreCompileInputs.cache
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\bin\Debug\net6.0\PigLatinSimple.exe
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\bin\Debug\net6.0\PigLatinSimple.deps.json
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\bin\Debug\net6.0\PigLatinSimple.runtimeconfig.json
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\bin\Debug\net6.0\PigLatinSimple.dll
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\bin\Debug\net6.0\PigLatinSimple.pdb
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.dll
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\refint\PigLatinSimple.dll
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.pdb
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\PigLatinSimple.genruntimeconfig.cache
+C:\Users\BootCamp\Desktop\School Repos\PigLatinSimple\PigLatinSimple\obj\Debug\net6.0\ref\PigLatinSimple.dll
