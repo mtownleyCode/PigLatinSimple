@@ -14,7 +14,7 @@ namespace PigLatinSimple.Helpers
             {
                 Console.WriteLine("Enter a word/phrase:");
 
-                validInput = Console.ReadLine().ToLower();
+                validInput = Console.ReadLine();
 
                 if (string.IsNullOrEmpty(validInput))
                 {

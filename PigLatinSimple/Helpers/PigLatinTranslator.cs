@@ -1,11 +1,11 @@
 ﻿using PigLatinSimple.Models;
-using System.Globalization;
-using System.Text;
+
 
 namespace PigLatinSimple.Helpers
 {
     public class PigLatinTranslator
     {
+        int upperCaseCount = 0;
         int vowelIndex = 0;
 
         List<char> vowels = new List<char>();
@@ -52,6 +52,7 @@ namespace PigLatinSimple.Helpers
         private string Translator(string word, User user)
         {
             int iCNT = 0;
+            int originalCapCount;
             
             string translatedWord = "";
 
@@ -79,18 +80,44 @@ namespace PigLatinSimple.Helpers
 
             translatedWord = PrepareWord(word, user, ref startsWithVowel);
 
+            originalCapCount = capitalIndex.Count;
 
             if (startsWithVowel) 
-            { 
-                translatedWord += "way"; 
+            {
+                if (upperCaseCount == translatedWord.Length)
+                {
+                    for (int i = capitalIndex.Count; i < originalCapCount + 3; i++)
+                    {
+                        capitalIndex.Add(i);
+                    }
+                    translatedWord += "WAY";
+                }
+                else
+                {
+                    translatedWord += "way"; 
+                }
             }
             else
             {
                 translatedWord = SplitWord(translatedWord);
 
-                translatedWord += "ay";
-                
+                if (upperCaseCount == translatedWord.Length)
+                {
+                    for (int i = capitalIndex.Count; i < originalCapCount + 2; i++)
+                    {
+                        capitalIndex.Add(i);
+                    }
+
+                    translatedWord += "AY";
+                }
+                else
+                {
+                    translatedWord += "ay";
+                }
+
             }
+
+            upperCaseCount = 0;
 
             translatedWord = ResetPunctuationAndCapitals(word, translatedWord);
 
@@ -111,7 +138,8 @@ namespace PigLatinSimple.Helpers
             {
                 if (Char.IsUpper(c))
                 {
-                    capitalIndex.Add(iCNT);
+                    upperCaseCount++;
+                    capitalIndex.Add(iCNT - punctuations.Count);
                 }
 
                 if (iCNT == 0 && vowels.Contains(c)) { startsWithVowel = true; }
@@ -175,9 +203,9 @@ namespace PigLatinSimple.Helpers
                     translatedWord = translatedWord + entry.Value;
                 else
                 {
-                    translatedWord = translatedWord.Substring(0, (word.Length + punctuationDifference) - 1) +
+                    translatedWord = translatedWord.Substring(0, entry.Key + punctuationDifference + 1) + 
                                      entry.Value +
-                                     translatedWord.Substring(word.Length + punctuationDifference - 1);
+                                     translatedWord.Substring(entry.Key + punctuationDifference + 1);
                 }
 
             }
