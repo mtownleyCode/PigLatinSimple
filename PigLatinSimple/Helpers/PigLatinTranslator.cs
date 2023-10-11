@@ -144,7 +144,7 @@ namespace PigLatinSimple.Helpers
 
                 if (iCNT == 0 && vowels.Contains(c)) { startsWithVowel = true; }
 
-                vowelIndex = vowelIndex == 0 && vowels.Contains(c) ? iCNT : vowelIndex;
+                vowelIndex = !startsWithVowel && vowels.Contains(c) ? iCNT : vowelIndex;
 
                 if (c == 33 || c == 39 || c == 46 || c == 63)
                 {
